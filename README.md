@@ -3,3 +3,5 @@
 "!https://api.codeclimate.com/v1/badges/6cde11a0db481028005c/maintainability!":https://codeclimate.com/github/gleeebkaaa/frontend-project-44/maintainability
 
 https://asciinema.org/a/FxI12wDaEcnuFua80iDTaITG3 //аскинема brain-even
+
+https://asciinema.org/a/2CNK5T3teIhQjB644kbpGdgt8 //аскинема brain-calc

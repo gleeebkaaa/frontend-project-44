@@ -11,8 +11,14 @@ test:
 	npm test
 
 make lint:
-	npx eslint
+	npx eslint .
 
 brain-even:
-	node bin/brain-even.js
+	node games/brain-even.js
+
+brain-calc:
+	node games/brain-calc.js
+
+brain-gcd:
+	node games/brain-gcd.js
 
