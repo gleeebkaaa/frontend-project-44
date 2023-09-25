@@ -1,2 +1,5 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/gleeebkaaa/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/gleeebkaaa/frontend-project-44/actions)
+"!https://api.codeclimate.com/v1/badges/6cde11a0db481028005c/maintainability!":https://codeclimate.com/github/gleeebkaaa/frontend-project-44/maintainability
+
+https://asciinema.org/a/FxI12wDaEcnuFua80iDTaITG3 //аскинема brain-even

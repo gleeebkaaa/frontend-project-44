@@ -1,0 +1,21 @@
+env:
+  browser: true
+  node: true
+  es2021: true
+extends: airbnb-base
+parserOptions:
+  ecmaVersion: latest
+  sourceType: module
+globals:
+  var1: writable
+  var2: readonly
+rules:
+  no-console: "off"
+  import/extensions: "off"
+
+
+
+
+
+
+
