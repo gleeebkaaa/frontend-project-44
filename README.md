@@ -5,3 +5,7 @@
 https://asciinema.org/a/FxI12wDaEcnuFua80iDTaITG3 //аскинема brain-even
 
 https://asciinema.org/a/2CNK5T3teIhQjB644kbpGdgt8 //аскинема brain-calc
+
+https://asciinema.org/a/AcazRk7TtSTbPSnWssfdIIHl6 //аскинема brain-gcd
+
+https://asciinema.org/a/P4DyY05thdXQpIEZizexCFsHn //аскинема brain-progression

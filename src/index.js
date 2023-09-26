@@ -1,10 +1,11 @@
 import readlineSync from 'readline-sync';
 
-export default function gameLogic(getQuestionsAndAnswer, maxCorrectAnswer = 3) {
+const gameLogic = (getQuestionsAndAnswer, introMessage, maxCorrectAnswer = 3) => {
     console.log('Welcome to the Brain Games!');
     
     const name = readlineSync.question('May I have your name? ');
     console.log(`Hello, ${name}!`);
+    console.log(introMessage);
     let correctAnswerCount = 0;
     
     for (let i = 0; i < maxCorrectAnswer; i += 1) {
@@ -28,3 +29,5 @@ export default function gameLogic(getQuestionsAndAnswer, maxCorrectAnswer = 3) {
 
     }
 };
+
+export default gameLogic;

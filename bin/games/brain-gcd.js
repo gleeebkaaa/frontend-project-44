@@ -1,7 +1,6 @@
 #!/usr/bin/env node
-import gameLogic from '../src/index.js';
+import gameLogic from '../../src/index.js';
 
-console.log('Find the greatest common divisor of given numbers.');
 
 function commonDivisor(a, b) {
     if (b === 0) {
@@ -18,4 +17,5 @@ function generateNumbers() {
     return {question, correctAnswer};
 }
 
-gameLogic(generateNumbers);
+const introMessage = 'Find the greatest common divisor of given numbers.'
+gameLogic(generateNumbers, introMessage);
