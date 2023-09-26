@@ -10,7 +10,7 @@ const gameLogic = (getQuestionsAndAnswer, introMessage, maxCorrectAnswer = 3) =>
     
     for (let i = 0; i < maxCorrectAnswer; i += 1) {
         const {question, correctAnswer} = getQuestionsAndAnswer();
-        console.log(`Questions: ${question}`);
+        console.log(`Question: ${question}`);
         const answer = readlineSync.question('Your answer: ');
     
         if (answer === correctAnswer) {
