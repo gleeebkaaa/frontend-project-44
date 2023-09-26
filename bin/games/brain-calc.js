@@ -8,8 +8,21 @@ const generateNumbers = () => {
   const operator = operators[Math.floor(Math.random() * operators.length)];
   const question = `${num1} ${operator} ${num2}`;
 
-  const correctAnswer = eval(question).toString();
+const getCorrectAnswer = (operator, num1, num2) => {
+  switch (operator) {
+    case '+':
+      return  (num1 + num2).toString();
+    case '-':
+      return  (num1 - num2).toString();
+    case '*':
+      return  (num1 * num2).toString();
+    default:
+    return null;
+  }
+};
 
+
+  const correctAnswer = getCorrectAnswer(operator, num1, num2);
   return { question, correctAnswer };
 };
 
