@@ -13,7 +13,7 @@ function generateNumbers() {
     const num1 = Math.floor(Math.random() * 100) + 1;
     const num2 = Math.floor(Math.random() * 100) + 1;
     const question = `${num1} ${num2}`;
-    const correctAnswer = commonDivisor(num1, num2);
+    const correctAnswer = String(commonDivisor(num1, num2));
     return {question, correctAnswer};
 }
 

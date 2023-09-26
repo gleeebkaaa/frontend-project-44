@@ -12,7 +12,7 @@ function generateNumbers() {
     }
     const randomIndex = Math.floor(Math.random() * 8);
 
-    const correctAnswer = Number(progress[randomIndex]);
+    const correctAnswer = String(progress[randomIndex]);
 
     progress[randomIndex] = '..';
 
