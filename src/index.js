@@ -1,24 +1,25 @@
 import readlineSync from 'readline-sync';
 
-const gameLogic = (getQuestionsAndAnswer, introMessage, maxCorrectAnswer = 3) => {
+const maxCorrectAnswerCount = 3;
+
+const gameLogic = (getQuestionsAndAnswer, description) => {
   console.log('Welcome to the Brain Games!');
 
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  console.log(introMessage);
-  let correctAnswerCount = 0;
+  console.log(description);
 
-  for (let i = 0; i < maxCorrectAnswer; i += 1) {
-    const { question, correctAnswer } = getQuestionsAndAnswer();
+  for (let i = 0; i < maxCorrectAnswerCount; i += 1) {
+
+    const [ question, correctAnswer ] = getQuestionsAndAnswer();
+
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === correctAnswer) {
       console.log('Correct!');
-      correctAnswerCount += 1;
-      if (correctAnswerCount === maxCorrectAnswer) {
+      if (i === maxCorrectAnswerCount - 1) {
         console.log(`Congratulations, ${name}!`);
-        return;
       }
     } else {
       console.log(`'${answer}' is wrong answer!; Correct answer was '${correctAnswer}'.`);

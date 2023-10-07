@@ -1,7 +1,7 @@
-#!/usr/bin/env node
 import gameLogic from '../../src/index.js';
 
-function generateNumbers() {
+const progressionGame = () => {
+const generateNumbers = () => {
   const start = Math.floor(Math.random() * 100) + 1;
   const step = Math.floor(Math.random() * 10) + 1;
 
@@ -17,8 +17,11 @@ function generateNumbers() {
   progress[randomIndex] = '..';
 
   const question = progress.join(' ');
-  return { question, correctAnswer };
+  return [ question, correctAnswer ];
 }
 
 const introMessage = 'What number is missing in the progression?';
 gameLogic(generateNumbers, introMessage);
+};
+
+export default progressionGame;
