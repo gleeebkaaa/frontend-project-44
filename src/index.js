@@ -10,8 +10,7 @@ const gameLogic = (getQuestionsAndAnswer, description) => {
   console.log(description);
 
   for (let i = 0; i < maxCorrectAnswerCount; i += 1) {
-
-    const [ question, correctAnswer ] = getQuestionsAndAnswer();
+    const [question, correctAnswer] = getQuestionsAndAnswer();
 
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');

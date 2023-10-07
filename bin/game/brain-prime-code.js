@@ -7,15 +7,15 @@ const myPrime = (num) => {
 };
 
 const primeGame = () => {
-const generateNumbers = () => {
-  const randNum = Math.floor(Math.random() * 1000) + 1;
-  const question = `${randNum}`;
-  const correctAnswer = myPrime(randNum) ? 'yes' : 'no';
-  return [ question, correctAnswer ];
-}
+  const generateNumbers = () => {
+    const randNum = Math.floor(Math.random() * 1000) + 1;
+    const question = `${randNum}`;
+    const correctAnswer = myPrime(randNum) ? 'yes' : 'no';
+    return [question, correctAnswer];
+  };
 
-const introMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-gameLogic(generateNumbers, introMessage);
+  const introMessage = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  gameLogic(generateNumbers, introMessage);
 };
 
 export default primeGame;
