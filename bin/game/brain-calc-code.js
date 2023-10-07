@@ -25,7 +25,7 @@ const generateNumbers = () => {
   };
 
   const correctAnswer = getCorrectAnswer();
-  return { question, correctAnswer };
+  return [ question, correctAnswer ];
 };
 
 gameLogic(generateNumbers, introMessage);
