@@ -39,4 +39,3 @@ const calcGame = () => {
 };
 
 export default calcGame;
-
