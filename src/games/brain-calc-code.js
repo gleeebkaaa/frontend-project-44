@@ -8,11 +8,11 @@ const getRandomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1)
 const calculateOperations = (operator, num1, num2) => {
   switch (operator) {
     case '+':
-      return (num1 + num2).toString();
+      return num1 + num2;
     case '-':
-      return (num1 - num2).toString();
+      return num1 - num2;
     case '*':
-      return (num1 * num2).toString();
+      return num1 * num2;
     default:
       return null;
   }
@@ -29,7 +29,7 @@ const getQuestionAndAnswer = () => {
   const operator = getRandomOperationSymbol();
 
   const question = `${num1} ${operator} ${num2}`;
-  const correctAnswer = calculateOperations(operator, num1, num2);
+  const correctAnswer = calculateOperations(operator, num1, num2).toString();
 
   return [question, correctAnswer];
 };
