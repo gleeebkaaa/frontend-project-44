@@ -20,7 +20,7 @@ const getQuestionAndAnswer = () => {
   const progression = generateProgression(start, step, progressionLength);
 
   const answer = String(progression[hiddenElementIndex]);
-  progression[hiddenElementIndex] = '..'; 
+  progression[hiddenElementIndex] = '..';
   const question = progression.join(' ');
 
   return [question, answer];
